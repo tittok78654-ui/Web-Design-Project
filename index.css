@@ -640,7 +640,7 @@ footer small {
 
 /* About Responsive */
 
-@media(max-width: 650px) {
+@media(max-width: 750px) {
     #about_section .about_container {
         grid-template-columns: 1fr;
     }

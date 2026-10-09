@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Desigin Project</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="index.css">
+    <!-- fontawsome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!-- swiper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+</head>
+<style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+</style>
+
+<body>
+    <header class="about_header">
+        <nav>
+            <a class="logo" href="index.html"><img src="" alt="">CUP COUURSE</a>
+            <div class="navbar" id="navbar">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>About Us</h1>
+
+    </header>
+
+    <main>
+        <div id="about_section">
+            <div class="about_container">
+                <div class="text_box">
+                    <h2>We are the World's Largest University</h2>
+                    <p>Making website is now one of the easiest things in the world.You just need to learn HTML,
+                        CSS, Javascript AND you are good to go.
+                        Making website is now one of the easiest things in the world.You just need to learn HTML,
+                        CSS, Javascript AND you are good to go.
+                    </p>
+                    <a href="course.html" class="hero_btn">EXPLORE NOW</a>
+                </div>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="Image/library.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Image/playground.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="Image/dinner.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 The best Cup Course. All Rights Reserved.</p>
+        <small>Home | Privacy Policy | Terms &amp; Conditions, Designed &amp; Developed by TiX</small>
+
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </footer>
+    <!-- for js -->
+    <script type="text/Javascript" src="index.js"></script>
+    <!-- for swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: {delay: 2000},
+            speed: 2000,
+
+            pagination: {
+                el: '.swiper-pagination',
+                dynamicBullets: true,
+                clickable: true,
+            },
+        });
+    </script>
+
+</html>
